@@ -1,0 +1,38 @@
+.inputContainer {
+  display: flex;
+  align-items: center;
+  width: 24rem;
+  border: 1px solid var(--Gray-200, #E2E8F0);
+  border-radius: 0.25rem;
+  background: #FFF;
+  top: 1rem;
+}
+
+.input {
+  flex: 1;
+  padding: 1rem 0.75rem;
+  border: none;
+  background: transparent;
+  width: 24rem;
+  padding: 1rem 0.75rem;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.25rem;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.passwordEye {
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+  border: none;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  border: 1rem;
+  margin-right: 1rem;
+
+}
