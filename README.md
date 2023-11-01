@@ -1,4 +1,4 @@
-## Projeto ADS Instituilção de Caridade
+## Projeto Instituilção de Caridade
 
 ### Telas
 - [x] Login Page
