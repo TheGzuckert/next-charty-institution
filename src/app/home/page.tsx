@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import wallLoginpage from './../../../public/assets/wallLoginpage.jpg';
 import { InputText } from '@/components/input/Input';
+import Link from 'next/link';
 
 export default function LoginPage() {
   return (
@@ -23,7 +24,7 @@ export default function LoginPage() {
             </div>
             <div className="mt-4">
               <button className="mt-2 w-96 p-4 px-6 bg-purple-600 text-white font-semibold p-2 rounded-md hover:bg-purple-500" type="submit">Entrar</button>
-              <p className="mt-5 text-gray-600">Ainda não tem uma conta? <a href="#" className="text-purple-600 font-bold">Inscreva-se</a></p>
+              <p className="mt-5 text-gray-600">Ainda não tem uma conta? <Link href="/register" className="text-purple-600 font-bold">Inscreva-se</Link></p>
             </div>
           </form>
         </div>

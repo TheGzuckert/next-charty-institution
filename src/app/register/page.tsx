@@ -23,8 +23,8 @@ export default function LoginPage() {
             <InputText placeholder="Digite uma senha" type="password" />
           </div>
           <div className="ml-80">
-            <button className="flex p-4 justify-center items-center space-x-2 rounded-md">
-              Continuar
+            <button className="flex p-4 justify-center items-center space-x-2 rounded-md bg-purple-600 text-white font-bold">
+              CONTINUAR
             </button>
           </div>
         </form>
