@@ -2,6 +2,12 @@ import Image from 'next/image';
 import wallLoginpage from './../../../public/assets/wallLoginpage.jpg';
 import { InputText } from '@/components/input/Input';
 import Link from 'next/link';
+import { Metadata } from 'next';
+
+
+export const metadata: Metadata = {
+  title: 'Login'
+}
 
 export default function LoginPage() {
   return (
