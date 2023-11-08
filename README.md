@@ -2,7 +2,7 @@
 
 ### Telas
 - [x] Login Page
-- [ ] Cadastro
+- [x] Cadastro
 - [ ] Home
 
 ### Requesitos FN
