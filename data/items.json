@@ -1,0 +1,22 @@
+{
+  "alimentos": [
+    {
+      "id": "1",
+      "nome": "Arroz",
+      "quantidade": "10",
+      "categoria": "grãos"
+    },
+    {
+      "id": "3",
+      "nome": "Carne",
+      "quantidade": "10",
+      "categoria": "Carne"
+    },
+    {
+      "id": "4",
+      "nome": "Carne",
+      "quantidade": "10",
+      "categoria": "Carne"
+    }
+  ]
+}
