@@ -40,8 +40,9 @@ export default function LoginPage() {
           </form>
 
         </div>
+
         <div className="w-1/2 screen overflow-hidden flex-1">
-          <Image src={wallLoginpage} className="w-full h-screen object-cover" alt="Wallpaper"/>
+          <Image src={wallLoginpage} className="w-full h-screen object-cover" alt="Wallpaper" />
         </div>
 
       </div>

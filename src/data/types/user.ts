@@ -4,9 +4,4 @@ export interface User {
   email: string;
   phone: string;
   password: string;
-  // incomeUser: number;
-  // incomeFamily: number;
-  // deficiente: string;
-  // address: string;
-  // aboutYou: string;
 }
