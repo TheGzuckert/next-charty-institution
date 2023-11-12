@@ -2,7 +2,7 @@ import { InputText } from "@/components/input/Input";
 import Image from "next/image";
 import setaIcon from '../../../../public/assets/seta.svg';
 import { Metadata } from "next";
-import LinkButton from "@/components/linkButton";
+import LinkButton from "@/components/linkButton/linkButton";
 
 export const metadata: Metadata = {
   title: 'Cadastro'

@@ -1,14 +1,45 @@
+'use client'
 import { InputText } from "@/components/input/Input";
 import Image from "next/image";
 import setaIcon from '../../../../public/assets/seta.svg';
 import { Metadata } from "next";
-import LinkButton from "@/components/linkButton";
+import LinkButton from "@/components/linkButton/linkButton";
+import { User } from "@/data/types/user";
+import { useState } from "react";
+import { addRegisterUser } from "../../../../api";
 
-export const metadata: Metadata = {
-  title: 'Cadastro'
+
+// export const metadata: Metadata = {
+//   title: 'Cadastro'
+// }
+
+interface UserProps {
+  user: User; 
 }
 
-export default function LoginPage() {
+export default function LoginPage({ user }: UserProps) {
+  const [formData, setFormData] = useState(user)
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    try {
+      const newUser = await addRegisterUser(formData);
+      console.log('Novo usuário cadastrado:', newUser);
+      // Aqui você pode redirecionar para a próxima etapa ou fazer o que for necessário
+    } catch (error) {
+      console.error('Erro ao cadastrar usuário:', error);
+    }
+  };
+
+
   return (
     <section className="flex items-center justify-center h-screen">
       <div className="flex border border-solid border-gray-200">
@@ -38,12 +69,12 @@ export default function LoginPage() {
 
           <div className="mb-2">
             <label className="space-x-1 mt-8 text-gray-800 font-semibold font-ibm-plex-sans text-1 leading-150">Nome</label>
-            <InputText placeholder="Como prefere ser chamado" type="text" />
+            <InputText placeholder="Digite seu número de WhatsApp" type="text" onChange={(value) => console.log(value)} />
           </div>
 
           <div className="mb-2 mt-4">
             <label className="space-x-1 mt-8 text-gray-800 font-semibold font-ibm-plex-sans text-1 leading-150">Telefone</label>
-            <InputText placeholder="Digite seu número de WhatsApp" type="text" />
+            <InputText placeholder="Digite seu número de WhatsApp" type="text" onChange={(value) => console.log(value)} />
           </div>
 
           <div className="mb-2 mt-4">
@@ -53,7 +84,7 @@ export default function LoginPage() {
           
           <div className="mb-2 mt-4">
             <label className="space-x-1 mt-8 text-gray-800 font-semibold font-ibm-plex-sans text-1 leading-150">Senha</label>
-            <InputText placeholder="Digite uma senha" type="password" />
+            <InputText placeholder="Digite uma senha" type="password" onChange={(value) => console.log(value)} />
           </div>
 
           <LinkButton href="../profile"/>
@@ -63,3 +94,4 @@ export default function LoginPage() {
     </section>
   );
 }
+

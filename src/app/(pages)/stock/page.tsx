@@ -1,5 +1,5 @@
-import AddTask from "@/components/addTask";
-import ListaMant from "@/components/listaMant";
+import AddTask from "@/components/modal/addTask";
+import ListaMant from "@/components/modal/listaMant";
 import { getAllAlimentos } from "../../../../api";
 
 export default async function Home() {
