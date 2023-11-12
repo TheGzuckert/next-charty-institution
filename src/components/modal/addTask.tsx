@@ -2,7 +2,7 @@
 
 import Modal from "./modal";
 import { FormEventHandler, useState } from "react";
-import { addAlimento } from "../../api";
+import { addAlimento } from "../../../api";
 import { useRouter } from "next/navigation";
 import { v4 as uuidv4 } from "uuid";
 

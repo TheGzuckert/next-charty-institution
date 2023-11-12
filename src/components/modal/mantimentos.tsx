@@ -3,7 +3,7 @@
 import { Alimento } from "@/data/types/alimentos";
 import React from "react";
 import { useRouter } from "next/navigation";
-import { deleteAlimento, editAlimento } from "../../api";
+import { deleteAlimento, editAlimento } from "../../../api";
 import { FormEventHandler, useState } from "react";
 import { FiEdit, FiTrash2 } from "react-icons/fi";
 import Modal from "./modal";

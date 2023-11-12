@@ -1,13 +1,13 @@
+'use client'
 import { InputText } from "@/components/input/Input";
+import { Metadata } from "next";
 import Image from "next/image";
 import setaIcon from '../../../../public/assets/seta.svg';
-import { Metadata } from "next";
-import LinkButton from "@/components/linkButton";
+import LinkButton from "@/components/linkButton/linkButton";
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: 'Cadastro'
 }
-
 export default function LoginPage() {
   return (
     <section className="flex items-center justify-center h-screen">
@@ -39,7 +39,7 @@ export default function LoginPage() {
 
           <div className="w-96 mb-6 mt-6">
             <label className="space-x-1 mt-8 text-gray-800 font-semibold font-ibm-plex-sans text-1 leading-150">Fale um pouco sobre você</label>
-            <InputText placeholder="Fale um pouco sobre você aqui" type="text" />
+            <InputText placeholder="Fale um pouco sobre você aqui" type="text"/>
           </div>
 
           <LinkButton href="/"/>
