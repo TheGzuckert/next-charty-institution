@@ -18,3 +18,4 @@
 - [x] Mostrar senha do usuáro na pagina de login
 - [ ] Salvar dados do usuário
 - [ ] Deixar comentarios
+- [ ] Botão para mudar permissão de admin
