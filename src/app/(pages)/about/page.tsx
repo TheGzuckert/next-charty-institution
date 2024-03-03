@@ -2,7 +2,7 @@
 import { InputText } from "@/components/input/Input";
 import { Metadata } from "next";
 import Image from "next/image";
-import setaIcon from '../../../../public/assets/seta.svg';
+import setaIcon from '@public/assets/seta.svg';
 import Button from "@/components/button/button";
 
 const metadata: Metadata = {

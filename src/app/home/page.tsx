@@ -32,17 +32,39 @@ export default function LoginPage() {
               <InputText placeholder="Digite sua senha" type="password" />
             </div>
 
-            <div className="mt-4">
-              <button className="mt-2 w-96 p-4 px-6 bg-purple-600 text-white font-semibold rounded-md hover:bg-purple-500" type="submit">Entrar</button>
-              <p className="mt-5 text-gray-600">Ainda não tem uma conta? <Link href="/user" className="text-purple-600 font-bold">Inscreva-se</Link></p>
+            <div className="mt-10">
+
+              <Link href="/outra-pagina">
+                <div className="mt-2 w-96 p-4 px-6 bg-purple-600 text-white font-semibold rounded-md hover:bg-purple-500 flex items-center justify-center">
+                  Entrar
+                </div>
+
+              </Link>
+
+              <p className="mt-10 text-gray-600 text-sm">
+                Ainda não tem uma conta?
+
+              <Link 
+                href="/user" 
+                  className="text-purple-600 font-bold ml-1 text-sm">
+                  Inscreva-se
+              </Link>
+
+              </p>
+
             </div>
 
           </form>
-
         </div>
 
         <div className="w-1/2 screen overflow-hidden flex-1">
-          <Image src={wallLoginpage} className="w-full h-screen object-cover" alt="Wallpaper" />
+
+          <Image 
+            src={wallLoginpage} 
+            className="w-full h-screen object-cover" 
+            alt="Wallpaper" 
+          />
+
         </div>
 
       </div>
