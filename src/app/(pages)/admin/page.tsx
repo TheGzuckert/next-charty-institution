@@ -25,13 +25,8 @@ export default function LoginPage() {
 
             <div className="flex items-center justify-center w-96">
               <div className="mb-1 w-6 h-6 flex items-center justify-center font-semibold bg-gray-300 rounded-full text-gray-400">2</div>
-              <p className="ml-2 mb-1">Renda</p>
+              <p className="ml-2 mb-1">Dados</p>
               <Image src={setaIcon} width={20} height={20} alt="" />
-            </div>
-
-            <div className="flex items-center justify-center w-96">
-              <div className="mb-1 w-6 h-6 flex items-center justify-center font-semibold bg-gray-300 rounded-full text-gray-400">3</div>
-              <p className="ml-2 mb-1">Sobre</p>
             </div>
 
           </div>
@@ -57,7 +52,7 @@ export default function LoginPage() {
             <InputText placeholder="Digite uma senha" type="password"/>
           </div>
 
-          <Button href="../profile" buttonText="CONTINUAR"/>
+          <Button href="../dados" buttonText="CONTINUAR"/>
 
         </form>
       </div>

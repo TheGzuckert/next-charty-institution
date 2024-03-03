@@ -3,7 +3,7 @@ import { InputText } from "@/components/input/Input";
 import { Metadata } from "next";
 import Image from "next/image";
 import setaIcon from '../../../../public/assets/seta.svg';
-import LinkButton from "@/components/linkButton/linkButton";
+import Button from "@/components/button/button";
 
 const metadata: Metadata = {
   title: 'Cadastro'
@@ -42,7 +42,7 @@ export default function LoginPage() {
             <InputText placeholder="Fale um pouco sobre você aqui" type="text"/>
           </div>
 
-          <LinkButton href="/"/>
+          <Button href="/" buttonText="FINZALIZAR"/>
 
         </form>
       </div>

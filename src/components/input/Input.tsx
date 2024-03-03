@@ -1,5 +1,5 @@
-'use client';
-import { useState } from 'react';
+'use client'
+import React, { ChangeEvent, MouseEvent, useState } from 'react';
 import styles from './Input.module.css';
 import eyeOff from '../../../public/assets/eye-off.svg';
 import eye from '../../../public/assets/eye.svg';
@@ -8,25 +8,22 @@ import Image from 'next/image';
 interface InputProps {
   placeholder?: string;
   type?: 'text' | 'password' | 'email' | 'number';
-  onChange?: (value: string) => void;
+  onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
+  value?: string;
 }
 
-export function InputText({ placeholder, type = 'text', onChange }: InputProps) {
+export function InputText({ placeholder, type = 'text', onChange, value }: InputProps) {
   const [passwordVisible, setPasswordVisible] = useState(false);
-  const [text, setText] = useState('');
 
-  const handleTogglePasswordVisibility = (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault();
-    setPasswordVisible(!passwordVisible);
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    if (onChange) {
+      onChange(e);
+    }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const inputValue = e.target.value;
-    setText(inputValue);
-
-    if (onChange) {
-      onChange(inputValue);
-    }
+  const handleTogglePasswordVisibility = (e: MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    setPasswordVisible(!passwordVisible);
   };
 
   return (
@@ -35,7 +32,7 @@ export function InputText({ placeholder, type = 'text', onChange }: InputProps) 
         className={styles.input}
         placeholder={placeholder}
         type={passwordVisible ? 'text' : type}
-        value={text}
+        value={value}
         onChange={handleChange}
       />
       {type === 'password' && (
