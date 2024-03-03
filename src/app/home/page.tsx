@@ -34,7 +34,7 @@ export default function LoginPage() {
 
             <div className="mt-4">
               <button className="mt-2 w-96 p-4 px-6 bg-purple-600 text-white font-semibold rounded-md hover:bg-purple-500" type="submit">Entrar</button>
-              <p className="mt-5 text-gray-600">Ainda não tem uma conta? <Link href="/register" className="text-purple-600 font-bold">Inscreva-se</Link></p>
+              <p className="mt-5 text-gray-600">Ainda não tem uma conta? <Link href="/user" className="text-purple-600 font-bold">Inscreva-se</Link></p>
             </div>
 
           </form>
@@ -46,7 +46,8 @@ export default function LoginPage() {
         </div>
 
       </div>
-
+      
     </div>
+
   );
 }
