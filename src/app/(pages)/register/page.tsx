@@ -12,21 +12,31 @@ export default function LoginPage() {
 
   return (
     <section className="flex items-center justify-center h-screen">
+
       <div className="flex border border-solid border-gray-200">
+
         <form className="relative w-1/2 p-12">
 
           <div className="flex items-center justify-center w-96 p-1">
 
             <div className="flex items-center justify-center w-96">
+              
               <div className="mb-1 w-6 h-6 flex items-center justify-center font-semibold bg-purple-800 rounded-full text-white">1</div>
+
               <p className="ml-2 mb-1 font-bold">Contato</p>
+
               <Image src={setaIcon} width={20} height={20} alt="" />
+
             </div>
 
             <div className="flex items-center justify-center w-96">
+
               <div className="mb-1 w-6 h-6 flex items-center justify-center font-semibold bg-gray-300 rounded-full text-gray-400">2</div>
+
               <p className="ml-2 mb-1">Renda</p>
+
               <Image src={setaIcon} width={20} height={20} alt="" />
+              
             </div>
 
             <div className="flex items-center justify-center w-96">
