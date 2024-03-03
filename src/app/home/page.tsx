@@ -34,7 +34,7 @@ export default function LoginPage() {
 
             <div className="mt-10">
 
-              <Link href="/outra-pagina">
+              <Link href="/institution">
                 <div className="mt-2 w-96 p-4 px-6 bg-purple-600 text-white font-semibold rounded-md hover:bg-purple-500 flex items-center justify-center">
                   Entrar
                 </div>
