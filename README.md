@@ -3,13 +3,16 @@
 ### Telas
 - [x] Login Page
 - [x] Cadastro
-- [ ] Home
 - [ ] Cadastro mantimentos
+- [ ] Home
 
 ### Requesitos FN
 
-- [ ] Cdastrar usuasrios
+- [ ] Atribuir como admin
+- [ ] Atribuir usuário como colaborador
 - [ ] Cadastrar Mantimentos
+- [ ] Cdastrar usuasrios
+- [ ] Deixar comentarios
 - [ ] Listar Mantimentos
 - [ ] Logar
 
@@ -17,5 +20,3 @@
 ### Requesitos NF
 - [x] Mostrar senha do usuáro na pagina de login
 - [ ] Salvar dados do usuário
-- [ ] Deixar comentarios
-- [ ] Botão para mudar permissão de admin
