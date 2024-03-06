@@ -1,13 +1,9 @@
-import { Metadata } from "next"
+import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Home'
+  title: 'Home',
 }
 
 export default function LoginPage() {
-  return(
-    <div>
-      OLA MUNDOOO ESSA SERA HOME PRINCIPAL
-    </div>
-  )
+  return <div>OLA MUNDOOO ESSA SERA HOME PRINCIPAL</div>
 }
