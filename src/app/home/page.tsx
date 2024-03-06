@@ -45,7 +45,7 @@ export default function LoginPage() {
                 Ainda não tem uma conta?
 
               <Link 
-                href="/user" 
+                href="/register" 
                   className="text-purple-600 font-bold ml-1 text-sm">
                   Inscreva-se
               </Link>
