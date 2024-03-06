@@ -1,6 +1,5 @@
 import { InputText } from "@/components/input/Input";
-import Image from "next/image";
-import setaIcon from '../../../../public/assets/seta.svg';
+import { SlArrowRight } from "react-icons/sl";
 import Button from "@/components/button/button";
 import { Metadata } from "next";
 
@@ -19,13 +18,15 @@ export default function LoginPage() {
 
           <div className="flex items-center justify-center w-96 p-1">
 
-            <div className="flex items-center justify-center w-96">
+            <div className="flex items-center justify-center w-30">
               
               <div className="mb-1 w-6 h-6 flex items-center justify-center font-semibold bg-purple-800 rounded-full text-white">1</div>
 
               <p className="ml-2 mb-1 font-bold">Contato</p>
 
-              <Image src={setaIcon} width={20} height={20} alt="" />
+              <div className="ml-2 flex items-center">
+                <SlArrowRight />
+              </div>
 
             </div>
 
@@ -35,11 +36,13 @@ export default function LoginPage() {
 
               <p className="ml-2 mb-1">Renda</p>
 
-              <Image src={setaIcon} width={20} height={20} alt="" />
+              <div className="ml-2 flex items-center">
+                <SlArrowRight />
+              </div>
               
             </div>
 
-            <div className="flex items-center justify-center w-96">
+            <div className="flex items-center justify-center w-30">
               <div className="mb-1 w-6 h-6 flex items-center justify-center font-semibold bg-gray-300 rounded-full text-gray-400">3</div>
               <p className="ml-2 mb-1">Sobre</p>
             </div>
@@ -67,7 +70,7 @@ export default function LoginPage() {
             <InputText placeholder="Digite uma senha" type="password"/>
           </div>
 
-          <Button href="../profile" buttonText="CONTINUAR"/>
+          <Button href="/register/info" buttonText="CONTINUAR"/>
 
         </form>
       </div>
