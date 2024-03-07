@@ -1,4 +1,3 @@
-'use client'
 import { InputText } from '@/components/input/Input'
 import { Metadata } from 'next'
 import { SlArrowRight } from 'react-icons/sl'
