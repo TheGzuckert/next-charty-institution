@@ -4,10 +4,10 @@ import Button from '@/components/button/button'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Cadastro',
+  title: 'Registro',
 }
 
-export default function LoginPage() {
+export default function RegisterPage() {
   return (
     <section className="flex items-center justify-center h-screen">
       <div className="flex border border-solid border-gray-200">

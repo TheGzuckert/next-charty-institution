@@ -4,17 +4,17 @@ import { Metadata } from 'next'
 import Button from '@/components/button/button'
 
 export const metadata: Metadata = {
-  title: 'Cadastro',
+  title: 'Informações de Registro',
 }
 
-export default function LoginPage() {
+export default function InfoPage() {
   return (
     <section className="flex items-center justify-center h-screen">
       <div className="flex border border-solid border-gray-200">
         <form className="relative w-1/2 p-12">
           <div className="flex items-center justify-center w-96 p-1">
-            <div className="flex items-center justify-center w-96">
-              <div className="mb-1 w-6 h-6 flex items-center justify-center font-semibold bg-custom-green rounded-full text-white">
+            <div className="flex items-center justify-center w-30">
+              <div className="mb-1 w-6 h-6 flex items-center justify-center font-semibold bg-purple-800 rounded-full text-white">
                 1
               </div>
 
@@ -26,7 +26,7 @@ export default function LoginPage() {
             </div>
 
             <div className="flex items-center justify-center w-96">
-              <div className="mb-1 w-6 h-6 flex items-center justify-center font-semibold bg-purple-800 rounded-full text-white">
+              <div className="mb-1 w-6 h-6 flex items-center justify-center font-semibold bg-custom-green rounded-full text-white">
                 2
               </div>
 
@@ -37,11 +37,10 @@ export default function LoginPage() {
               </div>
             </div>
 
-            <div className="flex items-center justify-center w-96">
+            <div className="flex items-center justify-center w-30">
               <div className="mb-1 w-6 h-6 flex items-center justify-center font-semibold bg-gray-300 rounded-full text-gray-400">
                 3
               </div>
-
               <p className="ml-2 mb-1">Sobre</p>
             </div>
           </div>
